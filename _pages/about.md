@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "COMS 6998 Practical Deep Learning Systems Performance Course"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,43 +8,37 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
-
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
+Module 1: Introduction to Machine Learning (ML) and Deep Learning (DL) 
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+ML revolution and cloud;  Overview of ML algorithms, Supervised and Unsupervised Learning; ML performance concepts/techniques: bias, variance, generalization, regularization;  Performance metrics: algorithmic and system level; DL training: backpropagation, gradient descent, activation functions, data preprocessing, batch normalization, exploding and vanishing gradients, weight initialization, learning rate policies; Regularization techniques in DL Training: dropout, early stopping, data augmentation
 
-Create content & metadata
+
+Module 2: DL Training Architectures, Frameworks,  Hyperparameters  
 ------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+Stochastic and mini-batch gradient descent; Gradient descent strategies: momentum-based, AdaGrad, AdaDelta, RMSProp, Adam; DL training architectures: model and data parallelism, single node training, distributed training, parameter server, all reduce;  DL training hyperparameters: batch size, learning rate, momentum, weight decay, convergence and runtime issues; DL  training frameworks: Caffe, Tensorflow, Pytorch, Keras;  Hardware acceleration: GPUs, Tensor cores, NCCL, Intra and Inter node performance; Specialized DL architectures: CNNs, RNNs, LSTMs, GANs
 
-**Markdown generator**
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
+Module 3: Cloud Technologies and ML Platforms 
 ------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+ML system stack on cloud; Micro-services architecture: docker, kubernetes, kubeflow; Cloud storage: file, block, object storage, performance and flexibility; Network support on cloud platforms; Cloud based ML platforms from AWS, Microsoft, Google, and IBM; System stack, capabilities and tools support in different platforms;  Monitoring, performance, availability, and  observability 
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
 
-For more info
+Module 4: DL Performance Evaluation Tools and Techniques 
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Monitoring tools: GPU resources (nvprof, nvidiasmi), host system (top, iostat),  network monitoring; Time series analysis of resource usage data; Predictive performance modeling techniques: black-box vs white-box modeling, regression modeling, analytical modeling; Predictive performance models for DL: accuracy and runtime
+
+
+Module 5: ML Benchmarks 
+------
+DAWNBench, MLperfsuite, TensorflowHPM, Kaggle,OpenML; Datasets: MNIST, CIFAR10/100, ImageNet; Performance metrics for DL jobs; Runtime, cost, response time, accuracy, time to accuracy (TTA); Study of published numbers by different cloud service providers/vendors at benchmark forums; Compare performance scaling across GPUs for different models in MLperf ; Open Neural Network Exchange (ONNX)
+
+
+Module 6: DL Systems Performance Evaluation 
+------
+Training-logs: framework specific support, instrumentation, analysis ; Checkpointing: framework specific support, restarting from checkpoint; Job scheduling policies like FIFO, gang, earliest deadline first; Job Schedulers : Kubernetes, Gandiva,  Optimus; Job Elasticity: scaling GPUs during runtime, platform support; Scalability: learners, batch size, single node, distributed; Overview of conferences at intersection of ML and systems
+
+
+Module 7:  Advanced Topics 
+------
+Transfer Learning: finetuning and pseudo-labeling techniques; Deep reinforcement Learning; neural network synthesis and architecture search; Hyperparameter optimization; Automated Machine Learning; Robustness and adversarial training; Bias in models and de-biasing techniques; Devops principles in machine learning; Model lifecycle management; Drift detection and re-training; Federated learning and ML on edge devices 
+
