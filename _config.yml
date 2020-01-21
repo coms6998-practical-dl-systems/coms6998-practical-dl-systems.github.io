@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Course Description"
+title                    : "Columbia University"
 title_separator          : "-"
 name                     : &name "Practical Deep Learning Systems Performance"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Practical Deep Learning Systems Performance"
   avatar           : "profile.png"
-  bio              : "Course Description and other details"
+  bio              : ""
 
 
 

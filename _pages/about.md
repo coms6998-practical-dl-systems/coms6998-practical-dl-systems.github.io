@@ -8,10 +8,19 @@ redirect_from:
   - /about.html
 ---
 
+
+Grading
+-----
+1. 5 Assignments - 55%
+1. Project - 35%
+1. Technical Community Participation - 10%
+
+
 Module 1: Introduction to Machine Learning (ML) and Deep Learning (DL) 
 ------
 ML revolution and cloud;  Overview of ML algorithms, Supervised and Unsupervised Learning; ML performance concepts/techniques: bias, variance, generalization, regularization;  Performance metrics: algorithmic and system level; DL training: backpropagation, gradient descent, activation functions, data preprocessing, batch normalization, exploding and vanishing gradients, weight initialization, learning rate policies; Regularization techniques in DL Training: dropout, early stopping, data augmentation
 
+[Lecture 1](coms6998-practical-dl-systems.github.io/files/Lecture-1.pdf)
 
 Module 2: DL Training Architectures, Frameworks,  Hyperparameters  
 ------
