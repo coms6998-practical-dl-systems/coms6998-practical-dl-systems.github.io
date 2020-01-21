@@ -51,3 +51,10 @@ Module 7:  Advanced Topics
 ------
 Transfer Learning: finetuning and pseudo-labeling techniques; Deep reinforcement Learning; neural network synthesis and architecture search; Hyperparameter optimization; Automated Machine Learning; Robustness and adversarial training; Bias in models and de-biasing techniques; Devops principles in machine learning; Model lifecycle management; Drift detection and re-training; Federated learning and ML on edge devices 
 
+
+Instructor
+=====
+
+Parijat Dube is a Research Staff Member in IBM Research AI at IBM T. J. Watson Research Center, New York. Parijat obtained his PhD in 2002 at INRIA (Institute Nationale de Recherche en Informatique et Automation), Sophia Anitpolis, France, M.S. in 1999 at Indian Institute of Science (IISc), Bangalore, India and B.E. in 1997 from Regional Engineering College, Bhopal, India. Earlier he was a Post-doctoral fellow at IBM Research from 2002-2005. Parijat's current research involves AI Systems and their performance. Research involves performance evaluation, benchmarking, modeling, optimization, and control.
+
+[Webpage](https://researcher.watson.ibm.com/researcher/view.php?person=us-pdube)
